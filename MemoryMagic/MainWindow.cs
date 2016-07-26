@@ -113,5 +113,20 @@ namespace MemoryMagic
             Thread.Sleep(100);
             Log.Write("Zone: " + lua.GetLocalizedText("zoneData"), Color.Black);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Log.Write("Has Target: " + lua.HasTarget);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Log.Write("Is Casting: " + lua.PlayerIsCasting);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Log.Write("Target Casting: " + lua.TargetIsCasting);
+        }
     }
 }

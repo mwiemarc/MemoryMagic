@@ -102,7 +102,7 @@ namespace MemoryMagic
                 DoString(@"guid = UnitGUID(""target"")");
                 string result = GetLocalizedText("guid");
 
-                return true;
+                return result.Trim() != "";
             }
         }
 
@@ -113,7 +113,7 @@ namespace MemoryMagic
                 DoString(@"spell, rank, displayName, icon, startTime, endTime, isTradeSkill, castID, interrupt = UnitCastingInfo(""player"")");
                 string result = GetLocalizedText("castID");
 
-                return true;
+                return result.Trim() != "";
             }
         }
 
@@ -121,10 +121,10 @@ namespace MemoryMagic
         {
             get
             {
-                DoString(@"spell, rank, displayName, icon, startTime, endTime, isTradeSkill, castID, interrupt = UnitCastingInfo(""target"")");
-                string result = GetLocalizedText("castID");
+                DoString(@"spell, rank, displayName, icon, startTime, endTime, isTradeSkill, castID, interrupt = UnitCastingInfo('target')");
+                string result = GetLocalizedText("spell");
 
-                return true;
+                return result.Trim() != "";
             }
         }
 

@@ -36,6 +36,9 @@
             this.cmdSmite = new System.Windows.Forms.Button();
             this.cmdMyName = new System.Windows.Forms.Button();
             this.cmdMyZone = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LogTextBox
@@ -106,11 +109,44 @@
             this.cmdMyZone.UseVisualStyleBackColor = true;
             this.cmdMyZone.Click += new System.EventHandler(this.cmdMyZone_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(634, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 25);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Has Target";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(634, 193);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 25);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Me Casting";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(634, 224);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 25);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Tar Casting";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 437);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmdMyZone);
             this.Controls.Add(this.cmdMyName);
             this.Controls.Add(this.cmdSmite);
@@ -135,6 +171,9 @@
         private System.Windows.Forms.Button cmdSmite;
         private System.Windows.Forms.Button cmdMyName;
         private System.Windows.Forms.Button cmdMyZone;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
