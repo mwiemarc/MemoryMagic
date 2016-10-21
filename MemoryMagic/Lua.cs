@@ -162,7 +162,7 @@ namespace MemoryMagic
 
         public bool RuneReady(int runeId) // runeId = 1..6
         {
-            DoString(@"local RuneReady = select(3, GetRuneCooldown(i))");
+            DoString($@"local RuneReady = select(3, GetRuneCooldown({runeId}))");
             string result = GetLocalizedText("RuneReady");
             return true;
         }
