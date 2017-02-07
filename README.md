@@ -2,7 +2,7 @@
 
 World of Warcraft Bot - in development for live servers
 
-Current version: 7.1.0.23360 x86 
+Current version: 7.1.5.23420 x86
 
 To use: copy EXE to wherever, all DLL's are embedded no need to copy them aswell.
 
